@@ -7,9 +7,13 @@ multiple distinct collection opportunities. The tasking problem is then to selec
 possible for the spacecraft to feasibly collect in a given time period, subject to constraints on the spacecraft's
 agility and constraints on only collecting a single collect per request (no duplication of effort).
 
-The data set is hosted on both Github and Zenodo. The Github repository contains the original source data and the associated requests generated from the source data. 
-Due to the large size of produced files they are not included in the Github repository. However, they are
-hosted on Zenodo and can be downloaded from that location [TO BE UPDATED].
+The data set is hosted on both [Github](https://github.com/duncaneddy/aiaa-mis-satellite-scheduling-dataset) and 
+[Zenodo](https://zenodo.org/records/10934666). The Github repository contains the original source data, the associated requests generated
+from the source data, and scripts to reproduce the scenario files. Zenodo (DOI 10.5281/zenodo) hosts copies of the output
+Metis graph files and collect data files. Due to the large size of produced files these are not included in the Github 
+repository.
+
+Information on the Metis graph file format can be found [here](https://people.sc.fsu.edu/~jburkardt/data/metis_graph/metis_graph.html).
 
 ## Reproduction
 
@@ -48,10 +52,10 @@ comparable.
 
 | Spacecraft Count | Original Scenario Collects | Repository Scenario Collects |
 |------------------|----------------------------|-------------------------------|
-| 4                | 59356                         | 10                            |
-| 6                | 90777                         | 15                            |
-| 12               | 180008                         | 30                            |
-| 24               | 359170                         | 60                            |
+| 4                | 59356                         | 59624                            |
+| 6                | 90777                         | 91204                            |
+| 12               | 180008                         | 180939                            |
+| 24               | 359170                         | 361519                            |
 
 This repository also adds additional scenarios for 1, 2, and 36 satellites. Note, the 
 provided scenarios represent the largest 10,000 request data set. Should a smaller request set
